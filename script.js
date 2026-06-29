@@ -2962,7 +2962,7 @@ function HuntSection({ t, lang }) {
             "div",
             {
               className:
-                "mt-6 pt-5 border-t border-gold-700/30 flex items-center justify-between gap-4",
+                "mt-6 pt-5 border-t border-gold-700/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4",
             },
             React.createElement(
               "div",
@@ -2975,7 +2975,7 @@ function HuntSection({ t, lang }) {
               "a",
               {
                 href: "#reservar",
-                className: "btn-outline",
+                className: "btn-outline w-full sm:w-auto text-center",
               },
               t.hunt.booking_cta,
             ),
