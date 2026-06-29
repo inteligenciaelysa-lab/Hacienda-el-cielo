@@ -1243,21 +1243,21 @@ const NATURE_IMAGES = [
 ];
 
 const VIDEOS = {
-  hacienda_ext_video: "videos/haciendaVideos/hacienda1.mp4",
-  deer1: "videos/deerVideos/deer1.mp4",
-  deer2: "videos/deerVideos/deer2.mp4",
-  deer3: "videos/deerVideos/deer3.mp4",
-  deer4: "videos/deerVideos/deer4.mp4",
-  clubhouse: "videos/clubhouse/bar1.mp4",
-  bar: "videos/clubhouse/bar2.mp4",
-  suite1: "videos/suite/suite1.mp4",
-  kitchen: "videos/kitchen/kitchen1.mp4",
-  hiking: "videos/activities/hiking.mp4",
-  shooting: "videos/activities/shooting.mp4",
-  fishing: "videos/activities/fishing.mp4",
-  outdoorGames: "videos/activities/outdoorGames.mp4",
-  campfires: "videos/activities/campfires.mp4",
-  wildlife: "videos/activities/wildlife.mp4",
+  hacienda_ext_video: "https://www.pexels.com/download/video/37917262/",
+  deer1: "https://www.pexels.com/download/video/14009472/",
+  deer2: "https://www.pexels.com/download/video/36597741/",
+  deer3: "https://www.pexels.com/download/video/3195531/",
+  deer4: "https://www.pexels.com/download/video/28589076/",
+  clubhouse: "https://www.pexels.com/download/video/10374972/",
+  bar: "https://www.pexels.com/download/video/13063147/",
+  suite1: "https://www.pexels.com/download/video/29466040/",
+  kitchen: "https://www.pexels.com/download/video/8902154/",
+  hiking: "https://www.pexels.com/download/video/28267635/",
+  shooting: "https://www.pexels.com/download/video/6655863/",
+  fishing: "https://www.pexels.com/download/video/5249055/",
+  outdoorGames: "https://www.pexels.com/download/video/37483445/",
+  campfires: "vhttps://www.pexels.com/download/video/6951412/",
+  wildlife: "https://www.pexels.com/download/video/7612155/",
 };
 
 // Stock photo URLs (Unsplash)
