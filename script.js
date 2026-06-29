@@ -1256,7 +1256,7 @@ const VIDEOS = {
   shooting: "https://www.pexels.com/download/video/6655863/",
   fishing: "https://www.pexels.com/download/video/5249055/",
   outdoorGames: "https://www.pexels.com/download/video/37483445/",
-  campfires: "vhttps://www.pexels.com/download/video/6951412/",
+  campfires: "https://www.pexels.com/download/video/6951412/",
   wildlife: "https://www.pexels.com/download/video/7612155/",
 };
 
@@ -1287,7 +1287,7 @@ const PHOTOS = {
   hacienda_ext4:
     "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
   // Suites / rooms
-  suite: "images/HaciendaSection/suites/suite1cama.webp",
+  suite: "images/HaciendaSection/suites/Suite1cama.webp",
   suite2: "images/HaciendaSection/suites/Suite 2_Naranja_Quemado_Hacienda.webp",
   suite3: "images/HaciendaSection/suites/Suite 3_Crema_Hacienda.webp",
   suite4:
