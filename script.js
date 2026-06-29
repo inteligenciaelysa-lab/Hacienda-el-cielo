@@ -206,7 +206,8 @@ const T = {
         "↳ Hospedaje incluido",
         "↳ Guía incluido",
       ],
-      photo_price: "$2,500 USD",
+      photo_price: "$2,500",
+      photo_price_unit : "USD",
       packages_title: "Paquetes de Cacería",
       booking_cta: "Solicitar Reservación",
       seasons: "Temporadas",
@@ -2908,7 +2909,7 @@ function HuntSection({ t, lang }) {
           React.createElement(
             "h3",
             {
-              className: "display-xl text-cream text-3xl md:text-4xl mb-2",
+              className: "display-xl text-cream text-xl sm:text-2xl md:text-4xl mb-2",
             },
             t.hunt.photo_title,
           ),
@@ -2924,7 +2925,7 @@ function HuntSection({ t, lang }) {
             "p",
             {
               className:
-                "font-serif text-cream/80 italic text-lg leading-relaxed",
+                "font-serif text-cream/80 italic text-sm sm:text-base md:text-lg leading-relaxed",
             },
             t.hunt.photo_desc,
           ),
@@ -2959,27 +2960,46 @@ function HuntSection({ t, lang }) {
             ),
           ),
           React.createElement(
-            "div",
-            {
-              className:
-                "mt-6 pt-5 border-t border-gold-700/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4",
-            },
-            React.createElement(
-              "div",
-              {
-                className: "font-display text-gold-400 text-3xl md:text-4xl",
-              },
-              t.hunt.photo_price,
-            ),
-            React.createElement(
-              "a",
-              {
-                href: "#reservar",
-                className: "btn-outline w-full sm:w-auto text-center",
-              },
-              t.hunt.booking_cta,
-            ),
-          ),
+  "div",
+  {
+    className:
+      "mt-6 pt-5 border-t border-gold-700/30 flex items-center justify-between gap-2 sm:gap-4",
+  },
+
+  // Contenedor del precio
+  React.createElement(
+    "div",
+    null,
+
+    React.createElement(
+      "div",
+      {
+        className: "font-display text-gold-400 text-xl sm:text-2xl md:text-4xl",
+      },
+      t.hunt.photo_price,
+    ),
+
+    React.createElement(
+      "div",
+      {
+        className: "text-[10px] sm:text-xs text-cream/60 tracking-[0.2em] uppercase",
+      },
+      "USD"
+      // o t.hunt.photo_unit
+    ),
+  ),
+
+  // Botón
+  React.createElement(
+    "a",
+    {
+      href: "#reservar",
+      className:
+        "btn-outline whitespace-nowrap text-[10px] sm:text-xs md:text-sm px-2 sm:px-4 md:px-6 py-2",
+    },
+    t.hunt.booking_cta,
+  ),
+)
         ),
       ),
       React.createElement(
