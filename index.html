@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacienda El Cielo · Cacería de Lujo · Zaragoza, Coahuila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Suprimir warning informativo de Tailwind CDN (no afecta funcionamiento)
+      const _origWarn = console.warn;
+      console.warn = function (...args) {
+        if (
+          args[0] &&
+          typeof args[0] === "string" &&
+          args[0].includes("cdn.tailwindcss.com")
+        )
+          return;
+        _origWarn.apply(console, args);
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: {
+                900: "#0d1b12",
+                800: "#142318",
+                700: "#1c3322",
+                600: "#264531",
+                500: "#355c44",
+              },
+              gold: {
+                300: "#e8d09a",
+                400: "#d4b878",
+                500: "#bf9c5a",
+                600: "#9d7f47",
+                700: "#7a6135",
+              },
+              cocoa: {
+                300: "#a68b6e",
+                500: "#6b4f37",
+                700: "#3d2c1e",
+                900: "#1f150c",
+              },
+              parchment: "#f4ecd8",
+              cream: "#faf6ec",
+            },
+            fontFamily: {
+              display: ["Cinzel", "serif"],
+              serif: ["Cormorant Garamond", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      if ("IntersectionObserver" in window) {
+        document.documentElement.classList.add("reveal-on");
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <noscript>
+      <div
+        style="
+          padding: 40px;
+          text-align: center;
+          font-family: serif;
+          color: #d4b878;
+          background: #0d1b12;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <h1 style="font-size: 2rem; margin-bottom: 1rem">Hacienda El Cielo</h1>
+        <p style="max-width: 480px; line-height: 1.6">
+          Esta página necesita JavaScript activado.<br />Si la abriste desde
+          WhatsApp y se ve en blanco, toca el menú (⋮) y elige
+          <strong>Abrir en navegador</strong> (Chrome o Safari).
+        </p>
+      </div>
+    </noscript>
+    <script src="script.js"></script>
+  </body>
+</html>

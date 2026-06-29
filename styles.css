@@ -1,0 +1,1311 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0d1b12;
+  color: #f4ecd8;
+  font-family: "Cormorant Garamond", serif;
+  overflow-x: hidden;
+}
+
+/* Hero background — layered nature scene */
+.hero-bg {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.55) 0%,
+      rgba(13, 27, 18, 0.75) 60%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-bg-trees {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.92) 0%,
+      rgba(13, 27, 18, 0.85) 100%
+    ),
+    url("https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-bg-hacienda {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 35, 24, 0.88) 0%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hunt section background — majestic whitetail in forest */
+.section-bg-hunt {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.92) 0%,
+      rgba(13, 27, 18, 0.85) 50%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-bg-hunt::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(191, 156, 90, 0.1) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      rgba(13, 27, 18, 0.6) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+}
+
+/* Activities section background — campfire / night forest */
+.section-bg-activities {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.9) 0%,
+      rgba(20, 35, 24, 0.82) 50%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-bg-activities::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(191, 100, 40, 0.1) 0%,
+      transparent 55%
+    ),
+    linear-gradient(180deg, transparent 60%, rgba(13, 27, 18, 0.5) 100%);
+  pointer-events: none;
+}
+
+/* About / family tradition background — forest */
+.section-bg-family {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.9) 0%,
+      rgba(20, 35, 24, 0.85) 50%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-bg-family::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at top right,
+      rgba(212, 184, 120, 0.12) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      rgba(53, 92, 68, 0.3) 0%,
+      transparent 55%
+    );
+  pointer-events: none;
+}
+
+/* Ensure section content sits above the ::before overlays */
+.section-bg-hunt > *,
+.section-bg-activities > *,
+.section-bg-family > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Decorative gold divider */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #bf9c5a;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bf9c5a, transparent);
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #d4b878 0%, #9d7f47 100%);
+  color: #0d1b12;
+  padding: 0.875rem 2rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: 1px solid #bf9c5a;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #e8d09a 0%, #bf9c5a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(191, 156, 90, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #d4b878;
+  padding: 0.875rem 2rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: 1px solid #bf9c5a;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: rgba(191, 156, 90, 0.1);
+  color: #e8d09a;
+}
+
+/* Display headings */
+.display-xl {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.script-accent {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Nav */
+.nav-link {
+  font-family: "Cinzel", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e8d09a;
+  transition: color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #d4b878;
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Cards */
+.card-luxe {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.6) 0%,
+    rgba(13, 27, 18, 0.8) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+}
+
+.card-luxe:hover {
+  border-color: rgba(212, 184, 120, 0.85);
+  background: linear-gradient(
+    135deg,
+    rgba(191, 156, 90, 0.22) 0%,
+    rgba(34, 80, 45, 0.55) 100%
+  );
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Photo placeholder with overlay */
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  background: #1c3322;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.photo-frame:hover img {
+  transform: scale(1.1);
+}
+
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    rgba(13, 27, 18, 0.6) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.fade-in-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-3 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-4 {
+  animation-delay: 0.8s;
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1b12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9d7f47;
+  border-radius: 4px;
+}
+
+/* Map road animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+
+.road-anim {
+  stroke-dasharray: 10, 6;
+  animation: dash 2s linear infinite;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13, 27, 18, 0.98);
+  border: 1px solid rgba(191, 156, 90, 0.4);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  margin-top: 10px;
+  z-index: 60;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  color: #e8d09a;
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(191, 156, 90, 0.1);
+  color: #fff;
+  padding-left: 1.5rem;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Form inputs */
+.luxe-input {
+  background: rgba(13, 27, 18, 0.6);
+  border: 1px solid rgba(191, 156, 90, 0.3);
+  color: #f4ecd8;
+  padding: 0.75rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.luxe-input:focus {
+  outline: none;
+  border-color: #d4b878;
+  background: rgba(13, 27, 18, 0.9);
+}
+
+.luxe-label {
+  font-family: "Cinzel", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d4b878;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Lang toggle */
+.lang-toggle-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid rgba(191, 156, 90, 0.5);
+  background: rgba(13, 27, 18, 0.6);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.lang-btn {
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  padding: 0.3rem 0.7rem;
+  color: #a68b6e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.lang-btn:hover {
+  color: #d4b878;
+  background: rgba(191, 156, 90, 0.08);
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, #e8d09a 0%, #bf9c5a 100%);
+  color: #0d1b12;
+  font-weight: 700;
+  box-shadow:
+    0 0 12px rgba(212, 184, 120, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.lang-btn.active:hover {
+  background: linear-gradient(135deg, #f0d8a8 0%, #d4b878 100%);
+  color: #0d1b12;
+}
+
+/* ====== "Cómo Llegar" dynamic section — ranch UTV ====== */
+.arrive-section {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.93) 0%,
+      rgba(20, 35, 24, 0.86) 50%,
+      rgba(13, 27, 18, 0.94) 100%
+    ),
+    url("https://images.unsplash.com/photo-1626176231087-3127434c2bce?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.arrive-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><path d='M0 30 L60 30 M30 0 L30 60' stroke='%23bf9c5a' stroke-width='0.3' opacity='0.08'/></svg>");
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.arrive-section::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 184, 120, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: float-orb 12s ease-in-out infinite;
+}
+
+@keyframes float-orb {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(60px, 40px);
+  }
+}
+
+/* Map frame with glow */
+.map-frame {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.7) 0%,
+    rgba(13, 27, 18, 0.9) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(191, 156, 90, 0.15),
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 0 60px rgba(191, 156, 90, 0.04);
+}
+
+.map-frame::before,
+.map-frame::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bf9c5a;
+}
+
+.map-frame::before {
+  top: -6px;
+  left: -6px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.map-frame::after {
+  bottom: -6px;
+  right: -6px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Location pin card — clickable, animated */
+.pin-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(191, 156, 90, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.5) 0%,
+    rgba(13, 27, 18, 0.6) 100%
+  );
+  transition: all 0.35s ease;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pin-card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 184, 120, 0.12),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.pin-card:hover {
+  border-color: #d4b878;
+  background: linear-gradient(
+    135deg,
+    rgba(38, 69, 49, 0.7) 0%,
+    rgba(20, 35, 24, 0.85) 100%
+  );
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.pin-card:hover::before {
+  left: 100%;
+}
+
+.pin-card .pin-arrow {
+  margin-left: auto;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.35s ease;
+  color: #d4b878;
+}
+
+.pin-card:hover .pin-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.pin-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: transform 0.35s ease;
+}
+
+.pin-card:hover .pin-icon {
+  transform: scale(1.1);
+}
+
+.pin-icon.featured {
+  background: linear-gradient(135deg, #e8d09a, #bf9c5a);
+  color: #0d1b12;
+  box-shadow: 0 0 14px rgba(212, 184, 120, 0.5);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.pin-icon.standard {
+  background: rgba(244, 236, 216, 0.9);
+  color: #0d1b12;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 14px rgba(212, 184, 120, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(212, 184, 120, 0.8);
+  }
+}
+
+/* Airport card — enhanced */
+.airport-card {
+  position: relative;
+  padding: 1.75rem 1.5rem;
+  background: linear-gradient(
+    160deg,
+    rgba(28, 51, 34, 0.65) 0%,
+    rgba(13, 27, 18, 0.85) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: block;
+}
+
+.airport-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4b878, transparent);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.airport-card:hover {
+  border-color: #d4b878;
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(212, 184, 120, 0.2);
+}
+
+.airport-card:hover::before {
+  transform: scaleX(1);
+}
+
+.airport-plane {
+  display: inline-block;
+  font-size: 2rem;
+  color: #e8d09a;
+  margin-bottom: 0.75rem;
+  transition: transform 0.5s ease;
+}
+
+.airport-card:hover .airport-plane {
+  transform: translate(6px, -6px) rotate(-15deg);
+}
+
+.airport-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-family: "Cinzel", serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #bf9c5a;
+  transition: color 0.3s ease;
+}
+
+.airport-card:hover .airport-cta {
+  color: #e8d09a;
+}
+
+/* Route card decorative */
+.route-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.55) 0%,
+    rgba(13, 27, 18, 0.75) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.3);
+  padding: 1.25rem;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.route-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, #bf9c5a, transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.route-card:hover {
+  border-color: rgba(212, 184, 120, 0.85);
+  background: linear-gradient(
+    135deg,
+    rgba(191, 156, 90, 0.22) 0%,
+    rgba(34, 80, 45, 0.55) 100%
+  );
+  transform: translateX(4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.route-card:hover::after {
+  opacity: 1;
+}
+
+/* Lodging recommendation cards */
+.hotel-card {
+  position: relative;
+  border: 1px solid rgba(191, 156, 90, 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.5) 0%,
+    rgba(13, 27, 18, 0.7) 100%
+  );
+  transition: all 0.45s ease;
+  overflow: hidden;
+}
+
+.hotel-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(191, 156, 90, 0) 0%,
+    rgba(191, 156, 90, 0.14) 50%,
+    rgba(34, 80, 45, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.hotel-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hotel-card:hover {
+  border-color: rgba(212, 184, 120, 0.9);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(191, 156, 90, 0.28);
+}
+
+.hotel-card:hover::before {
+  opacity: 1;
+}
+
+/* Hunting package cards: gold/green on hover */
+.card-luxe.pkg-card:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(191, 156, 90, 0.25) 0%,
+    rgba(34, 80, 45, 0.6) 100%
+  );
+  border-color: rgba(212, 184, 120, 0.9);
+}
+
+/* Big section title with sparkles */
+.arrive-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.arrive-title-wrap::before,
+.arrive-title-wrap::after {
+  content: "✦";
+  position: absolute;
+  color: #bf9c5a;
+  font-size: 1rem;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.arrive-title-wrap::before {
+  top: -8px;
+  left: -28px;
+  animation-delay: 0s;
+}
+
+.arrive-title-wrap::after {
+  bottom: -4px;
+  right: -28px;
+  animation-delay: 1.5s;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* Subsection badge */
+.arrive-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  background: linear-gradient(
+    135deg,
+    rgba(191, 156, 90, 0.15) 0%,
+    rgba(13, 27, 18, 0.5) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.4);
+  font-family: "Cinzel", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #e8d09a;
+  margin-bottom: 1.5rem;
+}
+
+.arrive-badge .arrive-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d4b878;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ====== Reservation section background — forest path ====== */
+.reserve-bg {
+  position: relative;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(13, 27, 18, 0.92) 0%,
+      rgba(20, 35, 24, 0.86) 50%,
+      rgba(13, 27, 18, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.reserve-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><path d='M40 10 L46 34 L70 40 L46 46 L40 70 L34 46 L10 40 L34 34 Z' fill='%23bf9c5a' opacity='0.04'/></svg>");
+  pointer-events: none;
+}
+
+.reserve-bg::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 184, 120, 0.12) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: float-orb 14s ease-in-out infinite;
+}
+
+.reserve-bg .reserve-orb-2 {
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(191, 156, 90, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: float-orb 16s ease-in-out infinite reverse;
+}
+
+/* Store carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-frame {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(28, 51, 34, 0.45) 0%,
+    rgba(13, 27, 18, 0.85) 100%
+  );
+}
+
+.product-frame .product-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 3.25rem;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(191, 156, 90, 0.5);
+  background: rgba(13, 27, 18, 0.85);
+  color: #d4b878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  background: linear-gradient(135deg, #e8d09a 0%, #bf9c5a 100%);
+  color: #0d1b12;
+  border-color: #d4b878;
+}
+
+.product-chip {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(191, 156, 90, 0.4);
+  color: #e8d09a;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* Section heading ornament */
+.ornament {
+  width: 60px;
+  height: 1px;
+  background: #bf9c5a;
+  margin: 0 auto 1.5rem;
+  position: relative;
+}
+
+.ornament::before {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0d1b12;
+  color: #bf9c5a;
+  padding: 0 8px;
+  font-size: 0.7rem;
+}
+
+/* Scroll reveal: pre-hidden via .reveal-on, smooth opacity fade (no flash, no transform so hover is intact) */
+.reveal-on .card-luxe,
+.reveal-on .route-card,
+.reveal-on .hotel-card,
+.reveal-on .photo-frame {
+  opacity: 0;
+}
+
+.reveal-on .photo-frame {
+  transition: opacity 0.7s ease;
+}
+
+.reveal-on .card-luxe.in-view,
+.reveal-on .route-card.in-view,
+.reveal-on .hotel-card.in-view,
+.reveal-on .photo-frame.in-view {
+  opacity: 1;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 12, 8, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: zoom-out;
+  padding: 4vw;
+  animation: lbFade 0.3s ease;
+}
+
+.lightbox-overlay img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border: 1px solid rgba(191, 156, 90, 0.45);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes lbFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.float-wa {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+}
+
+.float-wa:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+}
+
+.float-reserve {
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d4b878 0%, #9d7f47 100%);
+  color: #0d1b12;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.float-reserve:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(212, 184, 120, 0.5);
+}
+
+/* Trust bar */
+.trust-bar {
+  border-top: 1px solid rgba(191, 156, 90, 0.25);
+  border-bottom: 1px solid rgba(191, 156, 90, 0.25);
+  background: rgba(13, 27, 18, 0.6);
+}
+
+/* Pedigree */
+.ped-frame {
+  position: relative;
+  overflow: hidden;
+  background: #1c3322;
+}
+
+.ped-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.ped-frame:hover img {
+  transform: scale(1.12);
+}
+
+.ped-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 12, 8, 0.9);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 90;
+  padding: 5vh 4vw;
+  overflow-y: auto;
+  animation: lbFade 0.3s ease;
+}
+
+.ped-modal {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 51, 34, 0.97) 0%,
+    rgba(13, 27, 18, 0.99) 100%
+  );
+  border: 1px solid rgba(191, 156, 90, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.ped-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  z-index: 3;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(13, 27, 18, 0.7);
+  color: #d4b878;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.ped-close:hover {
+  color: #f0d8a8;
+}
+
+.ped-node {
+  border: 1px solid rgba(191, 156, 90, 0.35);
+  background: rgba(28, 51, 34, 0.5);
+  padding: 0.5rem 0.4rem;
+}
+
+.ped-node-main {
+  border-color: rgba(212, 184, 120, 0.85);
+  background: linear-gradient(
+    135deg,
+    rgba(191, 156, 90, 0.28) 0%,
+    rgba(34, 80, 45, 0.55) 100%
+  );
+  padding: 0.6rem;
+}
+
+.ped-line {
+  width: 1px;
+  height: 14px;
+  background: rgba(191, 156, 90, 0.5);
+  margin: 5px auto;
+}
+
+.ped-line-center {
+  width: 1px;
+  height: 18px;
+  background: rgba(191, 156, 90, 0.5);
+  margin: 8px auto;
+}
+/* ── Carrusel NatureSection ── */
+@keyframes scroll-ltr {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scroll-rtl {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.carousel-track-ltr {
+  width: max-content;
+  animation: scroll-ltr 70s linear infinite;
+}
+.carousel-track-rtl {
+  width: max-content;
+  animation: scroll-rtl 70s linear infinite;
+}
+.carousel-mask:hover .carousel-track-ltr,
+.carousel-mask:hover .carousel-track-rtl {
+  animation-play-state: paused;
+}
