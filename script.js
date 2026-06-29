@@ -2975,7 +2975,7 @@ function HuntSection({ t, lang }) {
               "a",
               {
                 href: "#reservar",
-                className: "btn-outline whitespace-nowrap",
+                className: "btn-outline",
               },
               t.hunt.booking_cta,
             ),
