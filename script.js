@@ -1961,7 +1961,7 @@ function Hero({ t }) {
           "a",
           {
             href: "#caceria",
-            className: "btn-outline",
+            className: "btn-gold",
           },
           t.hero.cta2,
         ),
@@ -1990,7 +1990,7 @@ function SafetySection({ t }) {
   return React.createElement(
     "section",
     {
-      className: "py-24 bg-forest-900 border-y border-gold-700/20 relative",
+      className: "py-24 section-bg-frontera border-y border-gold-700/20 relative",
     },
     React.createElement(
       "div",
@@ -6630,7 +6630,7 @@ function PedigreeSection({ t, lang }) {
     "section",
     {
       id: "caceria-pedigri",
-      className: "py-32 border-t border-gold-700/20",
+      className: "bg-67b py-32 border-t border-gold-700/20",
     },
     React.createElement(
       "div",

@@ -36,6 +36,30 @@ body {
   background-position: center;
 }
 
+.section-bg-frontera {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.92) 0%,
+      rgba(13, 27, 18, 0.85) 100%
+    ),
+    url("images/bg-opt/7c.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-67b {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 27, 18, 0.92) 0%,
+      rgba(13, 27, 18, 0.85) 100%
+    ),
+    url("images/bg-opt/67B.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .section-bg-hacienda {
   background:
     linear-gradient(
@@ -524,7 +548,7 @@ body {
       rgba(20, 35, 24, 0.86) 50%,
       rgba(13, 27, 18, 0.94) 100%
     ),
-    url("https://images.unsplash.com/photo-1626176231087-3127434c2bce?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/68.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -951,7 +975,7 @@ body {
       rgba(20, 35, 24, 0.86) 50%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("images/bg-opt/7C.webp");
+    url("images/bg-opt/81.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
