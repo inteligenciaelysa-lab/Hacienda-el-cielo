@@ -3211,6 +3211,7 @@ function HaciendaSection({ t }) {
                   muted: true,
                   loop: true,
                   playsInline: true,
+                  preload: "none",
                 },
                 React.createElement("source", {
                   src: VIDEOS.hacienda_ext_video,
@@ -3361,6 +3362,7 @@ function HaciendaSection({ t }) {
                   muted: true,
                   loop: true,
                   playsInline: true,
+                  preload: "none",
                 },
                 React.createElement("source", {
                   src: VIDEOS.clubhouse,
@@ -3504,6 +3506,7 @@ function HaciendaSection({ t }) {
                   muted: true,
                   loop: true,
                   playsInline: true,
+                  preload: "none",
                 },
                 React.createElement("source", {
                   src: VIDEOS.suite1,
@@ -3652,6 +3655,7 @@ function HaciendaSection({ t }) {
                   muted: true,
                   loop: true,
                   playsInline: true,
+                  preload: "none",
                 },
                 React.createElement("source", {
                   src: VIDEOS.bar,
@@ -3815,6 +3819,7 @@ function HaciendaSection({ t }) {
                   muted: true,
                   loop: true,
                   playsInline: true,
+                  preload: "none",
                 },
                 React.createElement("source", {
                   src: VIDEOS.kitchen,
@@ -4014,6 +4019,7 @@ function HaciendaSection({ t }) {
                       muted: true,
                       loop: true,
                       playsInline: true,
+                      preload: "none",
                     },
                     React.createElement("source", {
                       src: [
