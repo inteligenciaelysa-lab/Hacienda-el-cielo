@@ -1307,11 +1307,14 @@ const PHOTOS = {
     "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
   // Suites / rooms
   suite: "images/HaciendaSection/suites-opt/Suite1cama.webp",
-  suite2: "images/HaciendaSection/suites-opt/Suite 2_Naranja_Quemado_Hacienda.webp",
+  suite2:
+    "images/HaciendaSection/suites-opt/Suite 2_Naranja_Quemado_Hacienda.webp",
   suite3: "images/HaciendaSection/suites-opt/Suite 3_Crema_Hacienda.webp",
-  suite4: "images/HaciendaSection/suites-opt/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
+  suite4:
+    "images/HaciendaSection/suites-opt/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
   suite5: "images/HaciendaSection/suites-opt/Baño Suite.webp",
-  banosuite: "images/HaciendaSection/suites-opt/Suite 5_Blanco_Marfil_Hacienda.webp",
+  banosuite:
+    "images/HaciendaSection/suites-opt/Suite 5_Blanco_Marfil_Hacienda.webp",
   // Bar / clubhouse
   Bar: "images/HaciendaSection/bar-opt/Bar.webp",
   botellasVino: "images/HaciendaSection/bar-opt/Botellas de Vinos HEC.webp",
@@ -2011,7 +2014,8 @@ function SafetySection({ t }) {
   return React.createElement(
     "section",
     {
-      className: "py-24 section-bg-frontera border-y border-gold-700/20 relative",
+      className:
+        "py-24 section-bg-frontera border-y border-gold-700/20 relative",
     },
     React.createElement(
       "div",
@@ -5351,52 +5355,52 @@ function ReservationSection({ t, lang }) {
             t.reserve.hotel_pn_desc,
           ),
           React.createElement(
-  "div",
-  {
-    className: "space-y-2",
-  },
-  [
-    ...t.reserve.hotel_pn_opts.map((opt, i) =>
-      React.createElement(
-        "label",
-        {
-          key: i,
-          className: `flex items-center gap-3 py-2 px-1 cursor-pointer border-b border-gold-700/15 last:border-0 transition-colors ${
-            hotelPN === opt.value
-              ? "text-gold-300"
-              : "text-cream/90 hover:text-cream"
-          }`,
-        },
-        React.createElement("input", {
-          type: "radio",
-          name: "hotelPN",
-          value: opt.value,
-          checked: hotelPN === opt.value,
-          onChange: (e) => setHotelPN(e.target.value),
-          className: "accent-gold-400",
-        }),
-        React.createElement(
-          "span",
-          {
-            className: "font-sans text-sm",
-          },
-          opt.label,
-        ),
-      ),
-    ),
+            "div",
+            {
+              className: "space-y-2",
+            },
+            [
+              ...t.reserve.hotel_pn_opts.map((opt, i) =>
+                React.createElement(
+                  "label",
+                  {
+                    key: i,
+                    className: `flex items-center gap-3 py-2 px-1 cursor-pointer border-b border-gold-700/15 last:border-0 transition-colors ${
+                      hotelPN === opt.value
+                        ? "text-gold-300"
+                        : "text-cream/90 hover:text-cream"
+                    }`,
+                  },
+                  React.createElement("input", {
+                    type: "radio",
+                    name: "hotelPN",
+                    value: opt.value,
+                    checked: hotelPN === opt.value,
+                    onChange: (e) => setHotelPN(e.target.value),
+                    className: "accent-gold-400",
+                  }),
+                  React.createElement(
+                    "span",
+                    {
+                      className: "font-sans text-sm",
+                    },
+                    opt.label,
+                  ),
+                ),
+              ),
 
-    hotelPN === "otro" &&
-      React.createElement("input", {
-        key: "otro-input",
-        type: "text",
-        value: hotelPNOtro,
-        onChange: (e) => setHotelPNOtro(e.target.value),
-        placeholder: "Especifica...",
-        className:
-          "w-full mt-2 px-3 py-2 bg-transparent border border-gold-700/40 rounded text-cream placeholder:text-cream/40 focus:outline-none focus:border-gold-400",
-      }),
-  ],
-),
+              hotelPN === "otro" &&
+                React.createElement("input", {
+                  key: "otro-input",
+                  type: "text",
+                  value: hotelPNOtro,
+                  onChange: (e) => setHotelPNOtro(e.target.value),
+                  placeholder: "Especifica...",
+                  className:
+                    "w-full mt-2 px-3 py-2 bg-transparent border border-gold-700/40 rounded text-cream placeholder:text-cream/40 focus:outline-none focus:border-gold-400",
+                }),
+            ],
+          ),
         ),
         React.createElement(
           "div",
@@ -7008,7 +7012,7 @@ function TrustBar({ lang }) {
           "Transfers included",
           "Specialized guide",
         ];
- /* return React.createElement(
+  /* return React.createElement(
     "div",
     {
       className: "trust-bar",
