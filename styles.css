@@ -18,7 +18,7 @@ body {
       rgba(13, 27, 18, 0.75) 60%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/71.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -31,7 +31,7 @@ body {
       rgba(13, 27, 18, 0.92) 0%,
       rgba(13, 27, 18, 0.85) 100%
     ),
-    url("https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/10.webp");
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,7 @@ body {
       rgba(20, 35, 24, 0.88) 0%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/8ok.webp");
   background-size: cover;
   background-position: center;
 }
@@ -58,7 +58,7 @@ body {
       rgba(13, 27, 18, 0.85) 50%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/11.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -92,7 +92,7 @@ body {
       rgba(20, 35, 24, 0.82) 50%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/30.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -122,7 +122,7 @@ body {
       rgba(20, 35, 24, 0.85) 50%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/1B.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -951,7 +951,7 @@ body {
       rgba(20, 35, 24, 0.86) 50%,
       rgba(13, 27, 18, 0.95) 100%
     ),
-    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80");
+    url("images/bg-opt/7C.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

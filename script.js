@@ -39,7 +39,7 @@ const T = {
       title1: "HACIENDA",
       title2: "EL CIELO",
       tagline:
-        "Una experiencia de cacería de lujo entre majestuosas montañas mexicanas, vegetación abundante y trofeos legendarios — en la frontera más segura entre Texas y México.",
+        "Una experiencia de cacería de lujo entre majestuosas montañas, vegetación abundante y trofeos legendarios — en la frontera más segura entre Texas y México.",
       cta1: "Reservar Estancia",
       cta2: "Descubrir Paquetes",
     },
@@ -49,11 +49,11 @@ const T = {
       stat1: "7",
       stat1_label: "Años consecutivos siendo la frontera más segura",
       stat2: "100 km",
-      stat2_label: "Del Río Bravo · Sierra del Burro, Coahuila Norte",
+      stat2_label: "Del Río Bravo · Sierra del Burro, Norte de Coahuila",
       stat3: "Sierra",
       stat3_label: "Donde nace la Serranía del Burro · Naturaleza virgen",
       desc1:
-        "Estamos a 100 km del Río Bravo, en el corazón de Coahuila Norte — la mejor zona de México para venado cola blanca. Piedras Negras lleva 7 años consecutivos siendo la frontera más segura entre México y Estados Unidos.",
+        "Estamos a 100 km del Río Bravo, en el corazón del Norte de Coahuila — la mejor zona de México para venado cola blanca. Piedras Negras lleva 7 años consecutivos siendo la frontera más segura entre México y Estados Unidos.",
       desc2:
         "Nuestra ubicación es estratégica: donde nace la majestuosa Serranía del Burro. Una región completamente virgen, llena de bosques, sierras, árboles centenarios y naturaleza pura.",
       how_title: "Cómo Llegar",
@@ -623,7 +623,7 @@ const T = {
       title1: "HACIENDA",
       title2: "EL CIELO",
       tagline:
-        "A luxury hunting experience among majestic Mexican mountains, lush wilderness and legendary trophies — on the safest border between Texas and Mexico.",
+        "A luxury hunting experience among majestic mountains, lush wilderness and legendary trophies — on the safest border between Texas and Mexico.",
       cta1: "Book Your Stay",
       cta2: "Explore Packages",
     },
@@ -633,11 +633,11 @@ const T = {
       stat1: "7",
       stat1_label: "Consecutive years as the safest border",
       stat2: "100 km",
-      stat2_label: "From the Rio Grande · Sierra del Burro, Northern Coahuila",
+      stat2_label: "From the Rio Bravo · Sierra del Burro, Northern Coahuila",
       stat3: "Sierra",
       stat3_label: "Where the Sierra del Burro begins · Untouched nature",
       desc1:
-        "We are 100 km from the Rio Grande, in the heart of Northern Coahuila — the best region in Mexico for whitetail deer. Piedras Negras has been the safest border between Mexico and the United States for 7 consecutive years.",
+        "We are 100 km from the Rio Bravo, in the heart of Northern Coahuila — the best region in Mexico for whitetail deer. Piedras Negras has been the safest border between Mexico and the United States for 7 consecutive years.",
       desc2:
         "Our location is strategic: where the majestic Sierra del Burro begins. A completely untouched region filled with forests, sierras, century-old trees and pure nature — the perfect setting for an unforgettable hunt.",
       how_title: "How to Arrive",
@@ -3422,42 +3422,6 @@ function HaciendaSection({ t }) {
                 alt: "",
               }),
             ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.wine,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.barShelf,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.fire,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
           ),
         ),
       tab === "suites" &&
@@ -3730,42 +3694,6 @@ function HaciendaSection({ t }) {
               },
               React.createElement("img", {
                 src: PHOTOS.mezcal,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.whiskey,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.bar2,
-                loading: "lazy",
-                decoding: "async",
-                alt: "",
-              }),
-            ),
-            React.createElement(
-              "div",
-              {
-                className: "photo-frame h-64",
-              },
-              React.createElement("img", {
-                src: PHOTOS.bar3,
                 loading: "lazy",
                 decoding: "async",
                 alt: "",
@@ -7041,7 +6969,7 @@ function TrustBar({ lang }) {
           "Transfers included",
           "Specialized guide",
         ];
-  return React.createElement(
+ /* return React.createElement(
     "div",
     {
       className: "trust-bar",
@@ -7071,7 +6999,7 @@ function TrustBar({ lang }) {
         ),
       ),
     ),
-  );
+  );*/
 }
 function App() {
   const [lang, setLang] = useState("es");
