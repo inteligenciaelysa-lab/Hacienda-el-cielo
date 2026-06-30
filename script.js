@@ -455,6 +455,10 @@ const T = {
           value: "hyatt",
           label: "Hyatt Place Piedras Negras",
         },
+        {
+          value: "otro",
+          label: "Otro (especificar)",
+        },
       ],
       notes: "Notas / Solicitudes Especiales",
       notes_ph:
@@ -1031,6 +1035,10 @@ const T = {
         {
           value: "hyatt",
           label: "Hyatt Place Piedras Negras",
+        },
+        {
+          value: "otro",
+          label: "Other (specify)",
         },
       ],
       notes: "Notes / Special Requests",
@@ -4375,6 +4383,7 @@ function ReservationSection({ t, lang }) {
   const [transport, setTransport] = useState("");
   const [hotelPN, setHotelPN] = useState("");
   const [notes, setNotes] = useState("");
+  const [hotelPNOtro, setHotelPNOtro] = React.useState("");
 
   const packageOptions = t.packages.map((p) => ({
     value: p.name,
@@ -5342,35 +5351,52 @@ function ReservationSection({ t, lang }) {
             t.reserve.hotel_pn_desc,
           ),
           React.createElement(
-            "div",
-            {
-              className: "space-y-2",
-            },
-            t.reserve.hotel_pn_opts.map((opt, i) =>
-              React.createElement(
-                "label",
-                {
-                  key: i,
-                  className: `flex items-center gap-3 py-2 px-1 cursor-pointer border-b border-gold-700/15 last:border-0 transition-colors ${hotelPN === opt.value ? "text-gold-300" : "text-cream/90 hover:text-cream"}`,
-                },
-                React.createElement("input", {
-                  type: "radio",
-                  name: "hotelPN",
-                  value: opt.value,
-                  checked: hotelPN === opt.value,
-                  onChange: (e) => setHotelPN(e.target.value),
-                  className: "accent-gold-400",
-                }),
-                React.createElement(
-                  "span",
-                  {
-                    className: "font-sans text-sm",
-                  },
-                  opt.label,
-                ),
-              ),
-            ),
-          ),
+  "div",
+  {
+    className: "space-y-2",
+  },
+  [
+    ...t.reserve.hotel_pn_opts.map((opt, i) =>
+      React.createElement(
+        "label",
+        {
+          key: i,
+          className: `flex items-center gap-3 py-2 px-1 cursor-pointer border-b border-gold-700/15 last:border-0 transition-colors ${
+            hotelPN === opt.value
+              ? "text-gold-300"
+              : "text-cream/90 hover:text-cream"
+          }`,
+        },
+        React.createElement("input", {
+          type: "radio",
+          name: "hotelPN",
+          value: opt.value,
+          checked: hotelPN === opt.value,
+          onChange: (e) => setHotelPN(e.target.value),
+          className: "accent-gold-400",
+        }),
+        React.createElement(
+          "span",
+          {
+            className: "font-sans text-sm",
+          },
+          opt.label,
+        ),
+      ),
+    ),
+
+    hotelPN === "otro" &&
+      React.createElement("input", {
+        key: "otro-input",
+        type: "text",
+        value: hotelPNOtro,
+        onChange: (e) => setHotelPNOtro(e.target.value),
+        placeholder: "Especifica...",
+        className:
+          "w-full mt-2 px-3 py-2 bg-transparent border border-gold-700/40 rounded text-cream placeholder:text-cream/40 focus:outline-none focus:border-gold-400",
+      }),
+  ],
+),
         ),
         React.createElement(
           "div",
