@@ -1291,10 +1291,9 @@ const PHOTOS = {
   suite: "images/HaciendaSection/suites-opt/Suite1cama.webp",
   suite2: "images/HaciendaSection/suites-opt/Suite 2_Naranja_Quemado_Hacienda.webp",
   suite3: "images/HaciendaSection/suites-opt/Suite 3_Crema_Hacienda.webp",
-  suite4:
-    "images/HaciendaSection/suites-opt/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
+  suite4: "images/HaciendaSection/suites-opt/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
   suite5: "images/HaciendaSection/suites-opt/Baño Suite.webp",
-  banosuite: "images/HaciendaSection/suites-opt/suite1cama.webp",
+  banosuite: "images/HaciendaSection/suites-opt/Suite 5_Blanco_Marfil_Hacienda.webp",
   // Bar / clubhouse
   Bar: "images/HaciendaSection/bar-opt/Bar.webp",
   botellasVino: "images/HaciendaSection/bar-opt/Botellas de Vinos HEC.webp",
