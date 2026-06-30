@@ -1175,6 +1175,16 @@ const T = {
   },
 };
 
+const TROFEOS = {
+  horizontal: "images/trofeos-leyenda-opt/22.webp",
+  n2E: "images/trofeos-leyenda-opt/2E.webp",
+  n4C: "images/trofeos-leyenda-opt/4C.webp",
+  n10C: "images/trofeos-leyenda-opt/10C.webp",
+  n11B: "images/trofeos-leyenda-opt/11B.webp",
+  n12B: "images/trofeos-leyenda-opt/12B.webp",
+  n13: "images/trofeos-leyenda-opt/13.webp",
+};
+
 const HISTORIA = {
   history: "images/historia/67.webp",
 };
@@ -1314,6 +1324,9 @@ const PHOTOS = {
   food4: "images/HaciendaSection/kitchen-opt/molcajete.webp",
   food5: "images/HaciendaSection/kitchen-opt/burrito.webp",
   food6: "images/HaciendaSection/kitchen-opt/comidamx.webp",
+  //fosiles
+  n4: "images/fosiles-opt/4.webp",
+  n15: "images/fosiles-opt/15.webp",
   // Exterior life
   fire: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=1200&q=80",
   patio:
@@ -2736,7 +2749,7 @@ function HuntSection({ t, lang }) {
           className: "photo-frame h-96 mb-6",
         },
         React.createElement("img", {
-          src: PHOTOS.deer2,
+          src: TROFEOS.horizontal,
           loading: "lazy",
           decoding: "async",
           alt: "Trophy deer",
@@ -2748,12 +2761,12 @@ function HuntSection({ t, lang }) {
           className: "grid grid-cols-2 md:grid-cols-3 gap-6 mb-16",
         },
         [
-          PHOTOS.deer1,
-          PHOTOS.deer3,
-          PHOTOS.turkey,
-          PHOTOS.birds,
-          PHOTOS.wildlife,
-          PHOTOS.mountains,
+          TROFEOS.n2E,
+          TROFEOS.n4C,
+          TROFEOS.n10C,
+          TROFEOS.n11B,
+          TROFEOS.n12B,
+          TROFEOS.n13,
         ].map((src, i) =>
           React.createElement(
             "div",
@@ -4299,7 +4312,7 @@ function AboutSection({ t }) {
             className: "photo-frame h-56",
           },
           React.createElement("img", {
-            src: PHOTOS.deer1,
+            src: PHOTOS.n4,
             loading: "lazy",
             decoding: "async",
             alt: "",
@@ -4335,7 +4348,7 @@ function AboutSection({ t }) {
             className: "photo-frame h-56",
           },
           React.createElement("img", {
-            src: PHOTOS.mountains,
+            src: PHOTOS.n15,
             loading: "lazy",
             decoding: "async",
             alt: "",
