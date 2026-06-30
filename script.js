@@ -207,7 +207,7 @@ const T = {
         "↳ Guía incluido",
       ],
       photo_price: "$2,500",
-      photo_price_unit : "USD",
+      photo_price_unit: "USD",
       packages_title: "Paquetes de Cacería",
       booking_cta: "Solicitar Reservación",
       seasons: "Temporadas",
@@ -1176,29 +1176,29 @@ const T = {
 };
 
 const HISTORIA = {
-  history : "images/historia/67.webp"
-}
+  history: "images/historia/67.webp",
+};
 
 const ACTIVITIES = {
-  hiking : "images/HaciendaSection/activities/70.webp",
-  starry_skies : "images/HaciendaSection/activities/25.webp",
-  wildlife : "images/HaciendaSection/activities/33.webp"
-}
+  hiking: "images/HaciendaSection/activities/70.webp",
+  starry_skies: "images/HaciendaSection/activities/25.webp",
+  wildlife: "images/HaciendaSection/activities/33.webp",
+};
 
 const PACKAGES_IMAGES = {
-  guajolote : "images/paquetes/20.webp",
-  cercaAlta : "images/paquetes/IMG_1047.webp",
-  cercaBaja : "images/paquetes/41.webp",
-  cazador : "images/paquetes/1C.webp"
-}
+  guajolote: "images/paquetes/20.webp",
+  cercaAlta: "images/paquetes/IMG_1047.webp",
+  cercaBaja: "images/paquetes/41.webp",
+  cazador: "images/paquetes/1C.webp",
+};
 
 const DEER_IMAGES = {
-  petrus : "images/venados/petrus.webp",
-  kratos : "images/venados/kratos.webp",
-  caymus : "images/venados/caymus.webp",
-  storm : "images/venados/storm.webp",
-  seven : "images/venados/seven.webp",
-  bernie : "images/venados/bernie.webp",
+  petrus: "images/venados/petrus.webp",
+  kratos: "images/venados/kratos.webp",
+  caymus: "images/venados/caymus.webp",
+  storm: "images/venados/storm.webp",
+  seven: "images/venados/seven.webp",
+  bernie: "images/venados/bernie.webp",
 };
 
 const NATURE_IMAGES = [
@@ -2586,7 +2586,8 @@ function NatureSection({ t }) {
       React.createElement(
         "div",
         {
-          className: direction === "ltr" ? "carousel-track-ltr" : "carousel-track-rtl",
+          className:
+            direction === "ltr" ? "carousel-track-ltr" : "carousel-track-rtl",
           style: { display: "flex", gap: "12px" },
         },
         doubled.map((src, i) =>
@@ -2637,7 +2638,10 @@ function NatureSection({ t }) {
         React.createElement("div", { className: "ornament" }),
         React.createElement(
           "p",
-          { className: "font-display text-[0.7rem] tracking-[0.4em] text-gold-400 mb-3" },
+          {
+            className:
+              "font-display text-[0.7rem] tracking-[0.4em] text-gold-400 mb-3",
+          },
           t.nature.eyebrow.toUpperCase(),
         ),
         React.createElement(
@@ -2647,7 +2651,10 @@ function NatureSection({ t }) {
         ),
         React.createElement(
           "p",
-          { className: "script-accent text-lg md:text-xl text-cream/80 max-w-3xl mx-auto italic leading-relaxed" },
+          {
+            className:
+              "script-accent text-lg md:text-xl text-cream/80 max-w-3xl mx-auto italic leading-relaxed",
+          },
           t.nature.desc,
         ),
       ),
@@ -2791,7 +2798,11 @@ function HuntSection({ t, lang }) {
                 className: "photo-frame h-56",
               },
               React.createElement("img", {
-                src: [PACKAGES_IMAGES.cercaAlta, PACKAGES_IMAGES.cercaBaja, PACKAGES_IMAGES.guajolote][i],
+                src: [
+                  PACKAGES_IMAGES.cercaAlta,
+                  PACKAGES_IMAGES.cercaBaja,
+                  PACKAGES_IMAGES.guajolote,
+                ][i],
                 loading: "lazy",
                 decoding: "async",
                 alt: pkg.name,
@@ -2885,7 +2896,7 @@ function HuntSection({ t, lang }) {
                   "a",
                   {
                     href: "#reservar",
-                    className: "btn-outline !py-2 !px-3 !text-[0.6rem]",
+                    className: "btn-gold !py-2 !px-3 !text-[0.6rem]",
                   },
                   t.hunt.booking_cta,
                 ),
@@ -2919,7 +2930,8 @@ function HuntSection({ t, lang }) {
           React.createElement(
             "h3",
             {
-              className: "display-xl text-cream text-xl sm:text-2xl md:text-4xl mb-2",
+              className:
+                "display-xl text-cream text-xl sm:text-2xl md:text-4xl mb-2",
             },
             t.hunt.photo_title,
           ),
@@ -2970,46 +2982,48 @@ function HuntSection({ t, lang }) {
             ),
           ),
           React.createElement(
-  "div",
-  {
-    className:
-      "mt-6 pt-5 border-t border-gold-700/30 flex items-center justify-between gap-2 sm:gap-4",
-  },
+            "div",
+            {
+              className:
+                "mt-6 pt-5 border-t border-gold-700/30 flex items-center justify-between gap-2 sm:gap-4",
+            },
 
-  // Contenedor del precio
-  React.createElement(
-    "div",
-    null,
+            // Contenedor del precio
+            React.createElement(
+              "div",
+              null,
 
-    React.createElement(
-      "div",
-      {
-        className: "font-display text-gold-400 text-xl sm:text-2xl md:text-4xl",
-      },
-      t.hunt.photo_price,
-    ),
+              React.createElement(
+                "div",
+                {
+                  className:
+                    "font-display text-gold-400 text-xl sm:text-2xl md:text-4xl",
+                },
+                t.hunt.photo_price,
+              ),
 
-    React.createElement(
-      "div",
-      {
-        className: "text-[10px] sm:text-xs text-cream/60 tracking-[0.2em] uppercase",
-      },
-      "USD"
-      // o t.hunt.photo_unit
-    ),
-  ),
+              React.createElement(
+                "div",
+                {
+                  className:
+                    "text-[10px] sm:text-xs text-cream/60 tracking-[0.2em] uppercase",
+                },
+                "USD",
+                // o t.hunt.photo_unit
+              ),
+            ),
 
-  // Botón
-  React.createElement(
-    "a",
-    {
-      href: "#reservar",
-      className:
-        "btn-outline whitespace-nowrap text-[10px] sm:text-xs md:text-sm px-2 sm:px-4 md:px-6 py-2",
-    },
-    t.hunt.booking_cta,
-  ),
-)
+            // Botón
+            React.createElement(
+              "a",
+              {
+                href: "#reservar",
+                className:
+                  "btn-gold whitespace-nowrap text-[10px] sm:text-xs md:text-sm px-2 sm:px-4 md:px-6 py-2",
+              },
+              t.hunt.booking_cta,
+            ),
+          ),
         ),
       ),
       React.createElement(
@@ -3379,7 +3393,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.barCH,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3391,7 +3405,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.kitchen,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3403,7 +3417,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.livingRoom,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3415,7 +3429,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.wine,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3427,7 +3441,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.barShelf,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3439,7 +3453,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.fire,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3477,7 +3491,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.suite,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
                 className: "absolute inset-0 w-full h-full object-cover",
               }),
@@ -3585,7 +3599,7 @@ function HaciendaSection({ t }) {
                       PHOTOS.banosuite,
                     ][i],
                     loading: "lazy",
-              decoding: "async",
+                    decoding: "async",
                     alt: "Suite",
                   }),
                 ),
@@ -3625,7 +3639,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.Bar,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
                 className: "absolute inset-0 w-full h-full object-cover",
               }),
@@ -3690,7 +3704,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.botellasVino,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3702,7 +3716,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.mesaPool,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3714,7 +3728,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.mezcal,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3726,7 +3740,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.whiskey,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3738,7 +3752,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.bar2,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3750,7 +3764,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.bar3,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3788,7 +3802,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.kitchen,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
                 className: "absolute inset-0 w-full h-full object-cover",
               }),
@@ -3853,7 +3867,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3865,7 +3879,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food2,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3877,7 +3891,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food3,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3889,7 +3903,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food4,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3901,7 +3915,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food5,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3913,7 +3927,7 @@ function HaciendaSection({ t }) {
               React.createElement("img", {
                 src: PHOTOS.food6,
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: "",
               }),
             ),
@@ -3987,7 +4001,7 @@ function HaciendaSection({ t }) {
                       ACTIVITIES.wildlife,
                     ][i],
                     loading: "lazy",
-              decoding: "async",
+                    decoding: "async",
                     alt: a.name,
                     className: "absolute inset-0 w-full h-full object-cover",
                   }),
@@ -4140,7 +4154,7 @@ function ActivitiesSection({ t }) {
                   PHOTOS.wildlife,
                 ][i],
                 loading: "lazy",
-              decoding: "async",
+                decoding: "async",
                 alt: a.name,
               }),
             ),
@@ -4354,7 +4368,7 @@ function AboutSection({ t }) {
           React.createElement("img", {
             src: PHOTOS.deer1,
             loading: "lazy",
-              decoding: "async",
+            decoding: "async",
             alt: "",
           }),
         ),
@@ -4366,7 +4380,7 @@ function AboutSection({ t }) {
           React.createElement("img", {
             src: PHOTOS.hacienda_ext2,
             loading: "lazy",
-              decoding: "async",
+            decoding: "async",
             alt: "",
           }),
         ),
@@ -4378,7 +4392,7 @@ function AboutSection({ t }) {
           React.createElement("img", {
             src: PHOTOS.hacienda_ext3,
             loading: "lazy",
-              decoding: "async",
+            decoding: "async",
             alt: "",
           }),
         ),
@@ -4390,7 +4404,7 @@ function AboutSection({ t }) {
           React.createElement("img", {
             src: PHOTOS.mountains,
             loading: "lazy",
-              decoding: "async",
+            decoding: "async",
             alt: "",
           }),
         ),
