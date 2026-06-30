@@ -1180,25 +1180,25 @@ const HISTORIA = {
 };
 
 const ACTIVITIES = {
-  hiking: "images/HaciendaSection/activities/70.webp",
-  starry_skies: "images/HaciendaSection/activities/25.webp",
-  wildlife: "images/HaciendaSection/activities/33.webp",
+  hiking: "images/HaciendaSection/activities-opt/70.webp",
+  starry_skies: "images/HaciendaSection/activities-opt/25.webp",
+  wildlife: "images/HaciendaSection/activities-opt/33.webp",
 };
 
 const PACKAGES_IMAGES = {
-  guajolote: "images/paquetes/20.webp",
-  cercaAlta: "images/paquetes/IMG_1047.webp",
-  cercaBaja: "images/paquetes/41.webp",
-  cazador: "images/paquetes/1C.webp",
+  guajolote: "images/paquetes-opt/20.webp",
+  cercaAlta: "images/paquetes-opt/IMG_1047.webp",
+  cercaBaja: "images/paquetes-opt/41.webp",
+  cazador: "images/paquetes-opt/1C.webp",
 };
 
 const DEER_IMAGES = {
-  petrus: "images/venados/petrus.webp",
-  kratos: "images/venados/kratos.webp",
-  caymus: "images/venados/caymus.webp",
-  storm: "images/venados/storm.webp",
-  seven: "images/venados/seven.webp",
-  bernie: "images/venados/bernie.webp",
+  petrus: "images/venados-opt/petrus.webp",
+  kratos: "images/venados-opt/kratos.webp",
+  caymus: "images/venados-opt/caymus.webp",
+  storm: "images/venados-opt/storm.webp",
+  seven: "images/venados-opt/seven.webp",
+  bernie: "images/venados-opt/bernie.webp",
 };
 
 const NATURE_IMAGES = [
@@ -1282,39 +1282,39 @@ const PHOTOS = {
   vegetation:
     "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
   // Hacienda exteriors
-  hacienda_ext: "images/HaciendaSection/hacienda/Hacienda(Exterior).webp",
-  hacienda_ext2: "images/HaciendaSection/hacienda/ParrillaExterior.webp",
-  hacienda_ext3: "images/HaciendaSection/hacienda/Firepit.webp",
+  hacienda_ext: "images/HaciendaSection/hacienda-opt/Hacienda(Exterior).webp",
+  hacienda_ext2: "images/HaciendaSection/hacienda-opt/ParrillaExterior.webp",
+  hacienda_ext3: "images/HaciendaSection/hacienda-opt/Firepit.webp",
   hacienda_ext4:
     "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
   // Suites / rooms
-  suite: "images/HaciendaSection/suites/Suite1cama.webp",
-  suite2: "images/HaciendaSection/suites/Suite 2_Naranja_Quemado_Hacienda.webp",
-  suite3: "images/HaciendaSection/suites/Suite 3_Crema_Hacienda.webp",
+  suite: "images/HaciendaSection/suites-opt/Suite1cama.webp",
+  suite2: "images/HaciendaSection/suites-opt/Suite 2_Naranja_Quemado_Hacienda.webp",
+  suite3: "images/HaciendaSection/suites-opt/Suite 3_Crema_Hacienda.webp",
   suite4:
-    "images/HaciendaSection/suites/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
-  suite5: "images/HaciendaSection/suites/Baño Suite.webp",
-  banosuite: "images/HaciendaSection/suites/suite1cama.webp",
+    "images/HaciendaSection/suites-opt/Suite 4_Mostaza_Quemado_Hacienda_v2.webp",
+  suite5: "images/HaciendaSection/suites-opt/Baño Suite.webp",
+  banosuite: "images/HaciendaSection/suites-opt/suite1cama.webp",
   // Bar / clubhouse
-  Bar: "images/HaciendaSection/bar/Bar.webp",
-  botellasVino: "images/HaciendaSection/bar/Botellas de Vinos HEC.webp",
-  mesaPool: "images/HaciendaSection/bar/Mesa pool.webp",
-  mezcal: "images/HaciendaSection/bar/Mezcal.webp",
-  whiskey: "images/HaciendaSection/bar/Whiskey.webp",
+  Bar: "images/HaciendaSection/bar-opt/Bar.webp",
+  botellasVino: "images/HaciendaSection/bar-opt/Botellas de Vinos HEC.webp",
+  mesaPool: "images/HaciendaSection/bar-opt/Mesa pool.webp",
+  mezcal: "images/HaciendaSection/bar-opt/Mezcal.webp",
+  whiskey: "images/HaciendaSection/bar-opt/Whiskey.webp",
   bar2: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80",
   bar3: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1200&q=80",
   //kitchen
-  kitchen: "images/HaciendaSection/clubhouse/Cocina.webp",
-  diningRoom: "images/HaciendaSection/clubhouse/Comedor.webp",
-  livingRoom: "images/HaciendaSection/clubhouse/Sala.webp",
-  barCH: "images/HaciendaSection/clubhouse/Bar.webp",
+  kitchen: "images/HaciendaSection/clubhouse-opt/Cocina.webp",
+  diningRoom: "images/HaciendaSection/clubhouse-opt/Comedor.webp",
+  livingRoom: "images/HaciendaSection/clubhouse-opt/Sala.webp",
+  barCH: "images/HaciendaSection/clubhouse-opt/Bar.webp",
   // Food
-  food: "images/HaciendaSection/kitchen/tacos.webp",
-  food2: "images/HaciendaSection/kitchen/tacos2.webp",
-  food3: "images/HaciendaSection/kitchen/nachos.webp",
-  food4: "images/HaciendaSection/kitchen/molcajete.webp",
-  food5: "images/HaciendaSection/kitchen/burrito.webp",
-  food6: "images/HaciendaSection/kitchen/comidamx.webp",
+  food: "images/HaciendaSection/kitchen-opt/tacos.webp",
+  food2: "images/HaciendaSection/kitchen-opt/tacos2.webp",
+  food3: "images/HaciendaSection/kitchen-opt/nachos.webp",
+  food4: "images/HaciendaSection/kitchen-opt/molcajete.webp",
+  food5: "images/HaciendaSection/kitchen-opt/burrito.webp",
+  food6: "images/HaciendaSection/kitchen-opt/comidamx.webp",
   // Exterior life
   fire: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=1200&q=80",
   patio:
@@ -1324,10 +1324,10 @@ const PHOTOS = {
   // Activities
   hiking:
     "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80",
-  shooting: "images/HaciendaSection/activities/Tiro Al Plato.webp",
+  shooting: "images/HaciendaSection/activities-opt/Tiro Al Plato.webp",
   fishing:
     "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80",
-  cornhole: "images/HaciendaSection/activities/Juegos al aire libre.webp",
+  cornhole: "images/HaciendaSection/activities-opt/Juegos al aire libre.webp",
   campfire:
     "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?auto=format&fit=crop&w=1200&q=80",
   wildlife:
