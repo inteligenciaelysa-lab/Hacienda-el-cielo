@@ -1229,7 +1229,6 @@ const NATURE_IMAGES = [
   "images/Nature-Hunting-opt/7B.webp",
   "images/Nature-Hunting-opt/8B.webp",
   "images/Nature-Hunting-opt/8ok.webp",
-  "images/Nature-Hunting-opt/9B.webp",
   "images/Nature-Hunting-opt/10.webp",
   "images/Nature-Hunting-opt/11.webp",
   "images/Nature-Hunting-opt/15.webp",
@@ -1659,7 +1658,8 @@ function Navbar({ lang, setLang, t }) {
     React.createElement(
       "nav",
       {
-        className: `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-forest-900/95 backdrop-blur-md py-3 border-b border-gold-700/30" : "bg-transparent py-5"}`,
+        className: "fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-forest-900/95 backdrop-blur-md py-3 border-b border-gold-700/30",
+        /*className: `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-forest-900/95 backdrop-blur-md py-3 border-b border-gold-700/30" : "bg-transparent py-5"}`,*/
       },
       React.createElement(
         "div",
