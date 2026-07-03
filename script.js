@@ -225,7 +225,7 @@ const T = {
           "Todo incluido (3 comidas + alcohol)",
           "↳ Hospedaje",
           "↳ Guía",
-          "↳ 1 animal",
+          "↳ 1 Venado",
         ],
         deposit: 7500,
       },
@@ -239,7 +239,7 @@ const T = {
           "Todo incluido (3 comidas + alcohol)",
           "↳ Hospedaje",
           "↳ Guía",
-          "↳ 1 animal",
+          "↳ 1 Venado",
         ],
         deposit: 7500,
       },
@@ -253,7 +253,7 @@ const T = {
           "Todo incluido (3 comidas + alcohol)",
           "↳ Hospedaje",
           "↳ Guía",
-          "↳ 1 animal",
+          "↳ 1 Guajolote",
         ],
         deposit: 1500,
       },
@@ -449,15 +449,15 @@ const T = {
       hotel_pn_opts: [
         {
           value: "hampton",
-          label: "Hampton by Hilton Piedras Negras",
+          label: "Hampton by Hilton Piedras Negras (Incluye traslado)",
         },
         {
           value: "hyatt",
-          label: "Hyatt Place Piedras Negras",
+          label: "Hyatt Place Piedras Negras (Incluye traslado)",
         },
         {
           value: "otro",
-          label: "Otro (especificar)",
+          label: "Otro (No incluye traslado)",
         },
       ],
       notes: "Notas / Solicitudes Especiales",
@@ -1194,7 +1194,7 @@ const TROFEOS = {
 };
 
 const HISTORIA = {
-  history: "images/historia/67.webp",
+  history: "images/historia/67.jpg",
 };
 
 const ACTIVITIES = {
@@ -2184,7 +2184,7 @@ function HowToArriveSection({ t }) {
           {
             className: "w-full",
             style: {
-              aspectRatio: "16/10",
+              aspectRatio: "16/6",
             },
           },
           React.createElement("iframe", {
@@ -6130,13 +6130,6 @@ function Footer({ t }) {
         ),
       ),
       React.createElement(
-        "p",
-        {
-          className: "font-serif italic text-cream/70 mb-6 max-w-2xl mx-auto",
-        },
-        t.footer.tagline,
-      ),
-      React.createElement(
         "div",
         {
           className: "gold-divider mb-6",
@@ -6149,6 +6142,13 @@ function Footer({ t }) {
           },
           "ZARAGOZA \xB7 COAHUILA \xB7 M\xC9XICO",
         ),
+      ),
+      React.createElement(
+        "p",
+        {
+          className: "font-serif italic text-cream/70 mb-6 max-w-2xl mx-auto",
+        },
+        t.footer.tagline,
       ),
       React.createElement(
         "p",
