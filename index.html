@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda El Cielo</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            padding: 30px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        input {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #222;
+            color: #fff;
+            margin-bottom: 15px;
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background: #bc9643;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h3>Hacienda El Cielo</h3>
+        <p style="color: #888; font-size: 14px;">Introduce la clave para ingresar al sitio</p>
+        
+        <input type="password" id="passInput" placeholder="Contraseña">
+        <button onclick="verificar()">Entrar</button>
+    </div>
+
+    <script>
+        function verificar() {
+            const contraseñaCorrecta = "Hacienda.7"; // Pon la clave que quieras aquí
+            const input = document.getElementById("passInput").value;
+
+            if (input === contraseñaCorrecta) {
+                // Si está bien, te redirecciona al archivo de tu app
+                window.location.href = "home.html"; 
+            } else {
+                alert("Clave incorrecta");
+            }
+        }
+    </script>
+
+</body>
+</html>
