@@ -56,17 +56,36 @@
     </div>
 
     <script>
-        function verificar() {
-            const contraseñaCorrecta = "Hacienda.7"; // Pon la clave que quieras aquí
-            const input = document.getElementById("passInput").value;
+        async function verificar() {
 
-            if (input === contraseñaCorrecta) {
-                // Si está bien, te redirecciona al archivo de tu app
-                window.location.href = "home"; 
-            } else {
-                alert("Clave incorrecta");
-            }
-        }
+    const password =
+        document.getElementById("passInput").value;
+
+    const respuesta = await fetch("login", {
+
+        method: "POST",
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+            password
+        })
+
+    });
+
+    if (respuesta.ok) {
+
+        window.location.href = "/home.html";
+
+    } else {
+
+        alert("Contraseña incorrecta");
+
+    }
+
+}
     </script>
 
 </body>
